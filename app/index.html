@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<script>
+    function move(obj,type){
+        var type=type||"x";
+        if(type=="x"){
+            var ws=document.documentElement.clientWidth;
+            var scale=ws/obj*100;
+            document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+        }else if(type=="y"){
+            var hs=document.documentElement.clientHeight;
+            var scale=hs/obj*100;
+            document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+        }
+    }
+    window.onload=function () {
+        var mySwiper= new Swiper (".swiper-container",{
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            pagination:".swiper-pagination",
+
+        });
+        move(750);
+    }
+</script>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="box">
+                <div class="box_left">
+                    <div class="cir">24</div>
+                </div>
+                <div class="box_middle">
+                    凤凰新闻
+                </div>
+                <div class="box_right">
+                    <div class="search"></div>
+                </div>
+            </div>
+            <div class="box1">
+                <ul>
+                    <li>头条</li>
+                    <li>推荐</li>
+                    <li>娱乐</li>
+                    <li>太原</li>
+                    <li>财经</li>
+                    <li>社会</li>
+                    <li>+</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <div class="swiper-container box2s">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="pic1">
+                                <span>习近平在军改会议的讲话</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic2">
+                                <span>他是被习近平称赞的秘鲁教授</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic3">
+                                <span>美大选后习近平见基辛格传递何信息？</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left"></div>
+                <div class="con1_right">
+                    <p class="tit">习近平：弘扬宪法精神 推动宪法实施</p>
+                    <span class="cons1">专题</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">28.7万</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left1"></div>
+                <div class="con1_right">
+                    <p class="tit">金马奖成绩不佳 台“独派”污称大陆电影血洗台湾</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">244</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left2"></div>
+                <div class="con1_right">
+                    <p class="tit">卡斯特罗葬礼今日举行 他的亲妹妹为何会缺席？</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">2125</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left3"></div>
+                <div class="con1_right">
+                    <p class="tit">媒体：张曙光和情妇落马后为啥还有“续集”？</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">2129</span>
+                </div>
+            </div>
+            <div class="con2">
+                <p class="tit">爱犬被袋鼠“锁喉”主人给袋鼠一拳</p>
+                <div class="cons5"></div>
+                <div class="cons6"></div>
+                <div class="cons7"></div>
+                <span class="cons8">12.04</span>
+                <span class="cons10"></span>
+                <span class="cons9">1585</span>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left4"></div>
+                <div class="con1_right">
+                    <p class="tit">媒体：让台湾看到，这就是蔡英文与特朗普通话的代价</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">6771</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left5"></div>
+                <div class="con1_right">
+                    <p class="tit">徐翔最信任的两名“战友”是什么来头？</p>
+                    <span class="cons4">12.04</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left6"></div>
+                <div class="con1_right">
+                    <p class="tit">解读刘士余严厉表态：杠杆收购后被严格监管</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">415</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left7"></div>
+                <div class="con1_right">
+                    <p class="tit">怂了？“港独”解释未帮“辱国议员”发声：怕收押被</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">1.4万</span>
+                </div>
+            </div>
+            <div class="con2">
+                <p class="tit">苹果手机也爆炸了 现场照片吓人</p>
+                <div class="cons5 cons11"></div>
+                <div class="cons6 cons12"></div>
+                <div class="cons7 cons13"></div>
+                <span class="cons8">12.04</span>
+                <span class="cons10"></span>
+                <span class="cons9">802</span>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left8"></div>
+                <div class="con1_right">
+                    <p class="tit">因大雾，这架从俄罗斯来的飞机在中国上空饶了十几圈</p>
+                    <span class="cons4">12.04</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">2261</span>
+                </div>
+            </div>
+            <div class="con1">
+                <div class="con1_left con1_left9"></div>
+                <div class="con1_right">
+                    <p class="tit">亚当斯45分新疆复仇四川 哈德森失绝杀山东胜辽宁</p>
+                    <span class="cons1">专题</span>
+                    <span class="cons3"></span>
+                    <span class="cons2">1307</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="last">
+    <div class="last1">
+        <span class="last_pic" style="color:red"></span>
+        <span class="last_con" style="color:red">新闻</span>
+    </div>
+    <div class="last1">
+        <span class="last_pic1"></span>
+        <span class="last_con">视频</span>
+    </div>
+    <div class="last1">
+        <span class="last_pic2"></span>
+        <span class="last_con">凤凰热</span>
+    </div>
+    <div class="last1">
+        <span class="last_pic3"></span>
+        <span class="last_con">我</span>
+    </div>
+</div>
+</body>
+</html>
